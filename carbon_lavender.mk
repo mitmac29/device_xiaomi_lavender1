@@ -15,6 +15,9 @@ TARGET_BOOT_ANIMATION_RES := 720
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
+# Sony Dolby
+$(call inherit-product, vendor/dolby/config.mk)
+
 # Inherit from lavender device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
