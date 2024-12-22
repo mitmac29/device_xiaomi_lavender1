@@ -16,9 +16,6 @@ TARGET_DISABLE_BLUR := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
-# V4A
-$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
-
 # Inherit from lavender device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
