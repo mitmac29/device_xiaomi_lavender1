@@ -4,6 +4,12 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Audio (Dolby Atmos)
+$(call inherit-product, vendor/motorola-dolby/setup.mk)
+
+# V4A
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/lavender/lavender-vendor.mk)
 
