@@ -19,6 +19,9 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 # Inherit from lavender device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+WITH_GMS_MINIMAL := true
+DEVICE_MAINTAINER := MiTESH
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_lavender
 PRODUCT_DEVICE := lavender
