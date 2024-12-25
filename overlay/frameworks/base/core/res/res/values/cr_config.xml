@@ -20,7 +20,7 @@
     <string name="config_lightFontFamily" translatable="false">sans-serif-light</string>
 
     <!-- Name of a font family to use as regular font. For theming purpose. -->
-    <string name="config_regularFontFamily" translatable="false">sans-serif-regular</string>
+    <string name="config_regularFontFamily" translatable="true">sans-serif-regular</string>
 
     <!-- Whether device has dash charging support -->
     <bool name="config_hasDashCharger">false</bool>
@@ -32,12 +32,12 @@
     <bool name="config_hasVoocCharger">false</bool>
 
     <!-- Smart charging -->
-    <bool name="config_smartChargingAvailable">false</bool>
+    <bool name="config_smartChargingAvailable">true</bool>
     <integer name="config_smartChargingBatteryLevel">80</integer>
     <integer name="config_smartChargingBatteryResumeLevel">60</integer>
-    <string name="config_smartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/charging_enabled</string>
-    <string name="config_smartChargingSuspendValue" translatable="false">0</string>
-    <string name="config_smartChargingResumeValue" translatable="false">1</string>
+    <string name="config_smartChargingSysfsNode" translatable="true">/sys/class/power_supply/battery/charging_enabled</string>
+    <string name="config_smartChargingSuspendValue" translatable="true">0</string>
+    <string name="config_smartChargingResumeValue" translatable="true">1</string>
 
     <!-- Defines the sysfs attribute path used by pocket bridge
          to communicate pocket state to the pocket judge kernel driver. -->
@@ -52,18 +52,18 @@
     <string name="config_pocketJudgeVendorProximitySensorName"></string>
 
     <!-- Whether the device supports Smart Pixels -->
-    <bool name="config_supportSmartPixels">false</bool>
+    <bool name="config_supportSmartPixels">true</bool>
 
     <!-- Whether to use old mobile type icons as default -->
-    <bool name="config_useOldMobileIcons">false</bool>
+    <bool name="config_useOldMobileIcons">true</bool>
 
     <!-- Whether device supports sensor based doze customizations -->
-    <bool name="config_dozePulseTilt">false</bool>
-    <bool name="config_dozePulseProximity">false</bool>
-    <bool name="config_deviceHaveWakeUpProximity">false</bool>
+    <bool name="config_dozePulseTilt">true</bool>
+    <bool name="config_dozePulseProximity">true</bool>
+    <bool name="config_deviceHaveWakeUpProximity">true</bool>
 
     <!-- Whether doze feature is enabled by default in settings -->
-    <bool name="config_doze_enabled_by_default">false</bool>
+    <bool name="config_doze_enabled_by_default">true</bool>
 
     <!-- Whether to show a custom view for FOD -->
     <bool name="config_needCustomFODView">false</bool>
@@ -133,13 +133,13 @@
     <bool name="config_faceAuthOnlyOnSecurityView">false</bool>
 
     <!-- Path to fast charging status file to detect whether an oem fast charger is active -->
-    <string name="config_oemFastChargerStatusPath" translatable="false"></string>
+    <string name="config_oemFastChargerStatusPath" translatable="true"></string>
 
     <!-- Path to fast charging status file to detect whether an oem fast charger is active -->
-    <string name="config_oemFastChargerStatusPath2" translatable="false"></string>
+    <string name="config_oemFastChargerStatusPath2" translatable="true"></string>
 
     <!-- Expected value from fast charging status file  -->
-    <string name="config_oemFastChargerStatusValue" translatable="false"></string>
+    <string name="config_oemFastChargerStatusValue" translatable="true"></string>
 
     <!-- OnePlus uses a proprietary vibrator hal to utilize the new powerful motor since the
          OnePlus 7 Pro. -->
@@ -149,5 +149,5 @@
     <bool name="config_showHideNotchSettings">false</bool>
 
     <!-- Alter build parameters for avoiding hardware attestation enforcement -->
-    <string-array name="config_spoofBuildGms" translatable="false"></string-array>
+    <string-array name="config_spoofBuildGms" translatable="true"></string-array>
 </resources>
