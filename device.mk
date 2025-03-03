@@ -5,7 +5,7 @@
 #
 
 # Audio (Dolby Atmos)
-$(call inherit-product, vendor/motorola-dolby/setup.mk)
+$(call inherit-product, vendor/dolby/config.mk)
 
 # V4A
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
