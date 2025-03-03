@@ -12,15 +12,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit some common LineageOS stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_DISABLE_BLUR := true
+#TARGET_DISABLE_BLUR := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Inherit from lavender device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-WITH_GMS_MINIMAL := true
-DEVICE_MAINTAINER := MiTESH
+WITH_GMS := true
+#DEVICE_MAINTAINER := MiTESH
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_lavender

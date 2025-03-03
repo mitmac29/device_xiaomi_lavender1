@@ -43,7 +43,7 @@ BOARD_KERNEL_PAGESIZE    := 4096
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_DTBOIMG_PARTITION_SIZE := 8388608
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-TARGET_KERNEL_SOURCE := kernel/xiaomi/lavender
+TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm660
 TARGET_KERNEL_CONFIG := lavender_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 #TARGET_KERNEL_CLANG_VERSION := clang-r450784d
@@ -52,8 +52,9 @@ TARGET_KERNEL_CLANG_COMPILE := true
 
 # Platform
 TARGET_BOARD_PLATFORM := sdm660
-# TARGET_KERNEL_ADDITIONAL_FLAGS += \
-# HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument" LLVM=1 LLVM_IAS=1
+TARGET_KERNEL_ADDITIONAL_FLAGS := \
+    HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
+TARGET_KERNEL_ADDITIONAL_FLAGS := LLVM=1 LLVM_IAS=1
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
@@ -164,7 +165,7 @@ include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
-BOARD_VENDOR_SEPOLICY_DIRS += \
+BOARD_VENDOR_SEPOLICY_DIRS := \
     $(DEVICE_PATH)/sepolicy/vendor/ViPER4AndroidFX
 
 # Treble
