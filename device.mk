@@ -3,7 +3,10 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-
+# V4A
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+# Sony Dolby
+$(call inherit-product, vendor/dolby/config.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/lavender/lavender-vendor.mk)
 
